@@ -4,6 +4,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//using namespace orakeshi.zombiemanager
+//{
+//    public class PlaceHolder : MonoBehaviour
+//    {
+//        print("This will be the main class setup");
+//    }
+
+//}
 public class ZombieManager : MonoBehaviour
 {
     public Transform[] ZombieSpawnPoints;

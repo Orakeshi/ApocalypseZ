@@ -28,11 +28,19 @@ public class PathFollow : MonoBehaviour
 
         if (pathCreator != null)
         {
+            // Magnitude causing speeds to be > 1000
             speed = (currentPosition - lastPos).magnitude / Time.deltaTime;
-            print(currentPosition);
-            print(lastPos);
-            print(currentPosition - lastPos);
-            print(speed);
+
+            Vector3 currentPos = transform.position;
+            List<Vector3> changeOverTime = new List<Vector3>();
+            changeOverTime.Add(currentPos);
+
+            foreach (var item in changeOverTime)
+            {
+                // Output the zombies transform over a given frame
+                Debug.Log(item);
+            }
+
             distanceTravelled += speed * Time.deltaTime;
 
             //transform.position = pathCreator.path.GetPointAtDistance(distanceTravelled, endOfPathInstruction);
