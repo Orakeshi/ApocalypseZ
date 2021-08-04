@@ -13,7 +13,7 @@ public class ZombieManager : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(testSpawn());
+        StartCoroutine(ZombieSpawn());
         //SpawnNewZombie();
     }
 
@@ -24,7 +24,7 @@ public class ZombieManager : MonoBehaviour
         //Instantiate(ZombiePrefab, ZombieSpawnPoints[random].transform.position, Quaternion.identity);
     }
 
-    IEnumerator testSpawn()
+    IEnumerator ZombieSpawn()
     {
         int random;
         random = Random.Range(0, 2);
@@ -44,8 +44,8 @@ public class ZombieManager : MonoBehaviour
             //ZombiePrefab.GetComponent<PathFollower>().pathCreator = routes[1];
         }
         
-        yield return new WaitForSeconds(3f);
-        StartCoroutine(testSpawn());
+        yield return new WaitForSeconds(10f);
+        StartCoroutine(ZombieSpawn());
     }
 
 
