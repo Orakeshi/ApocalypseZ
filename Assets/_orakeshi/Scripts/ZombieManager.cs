@@ -1,19 +1,52 @@
-﻿using System.Collections;
+﻿using PathCreation;
+using PathCreation.Examples;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ZombieManager : MonoBehaviour
 {
     public Transform[] ZombieSpawnPoints;
-    public GameObject ZombiePrefab;
+    public GameObject[] ZombiePrefab;
+    
+    public PathCreator[] routes;    
 
     void Start()
     {
-        SpawnNewZombie();
+        StartCoroutine(testSpawn());
+        //SpawnNewZombie();
     }
 
     void SpawnNewZombie()
     {
-        Instantiate(ZombiePrefab, ZombieSpawnPoints[0].transform.position, Quaternion.identity);
+        int random;
+        random = Random.Range(0, 1);
+        //Instantiate(ZombiePrefab, ZombieSpawnPoints[random].transform.position, Quaternion.identity);
     }
+
+    IEnumerator testSpawn()
+    {
+        int random;
+        random = Random.Range(0, 2);
+
+        int randomZombie = Random.Range(0, ZombiePrefab.Length);
+
+        GameObject currentZombie = Instantiate(ZombiePrefab[randomZombie], ZombieSpawnPoints[random].transform.position, Quaternion.identity);
+
+        if (random == 0)
+        {
+            currentZombie.GetComponent<PathFollower>().pathCreator = routes[0];
+            //ZombiePrefab.GetComponent<PathFollower>().pathCreator = routes[0];
+        }
+        else
+        {
+            currentZombie.GetComponent<PathFollower>().pathCreator = routes[1];
+            //ZombiePrefab.GetComponent<PathFollower>().pathCreator = routes[1];
+        }
+        
+        yield return new WaitForSeconds(3f);
+        StartCoroutine(testSpawn());
+    }
+
+
 }
