@@ -521,7 +521,7 @@ GameObject:
   - component: {fileID: 432231368}
   - component: {fileID: 432231369}
   - component: {fileID: 432231370}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VR Rig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1265,10 +1265,55 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 567077727329514987, guid: 1f772cb67f81e244d9e6a58eaf86cbad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210539735657490076, guid: 1f772cb67f81e244d9e6a58eaf86cbad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1422009877410600971, guid: 1f772cb67f81e244d9e6a58eaf86cbad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3874091575778155923, guid: 1f772cb67f81e244d9e6a58eaf86cbad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4583292322968995619, guid: 1f772cb67f81e244d9e6a58eaf86cbad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681723496466558125, guid: 1f772cb67f81e244d9e6a58eaf86cbad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6296598416458994506, guid: 1f772cb67f81e244d9e6a58eaf86cbad,
+        type: 3}
+      propertyPath: m_MovementType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6296598416458994507, guid: 1f772cb67f81e244d9e6a58eaf86cbad,
         type: 3}
       propertyPath: m_Name
       value: Rifle-Hunting
+      objectReference: {fileID: 0}
+    - target: {fileID: 6513291253018893727, guid: 1f772cb67f81e244d9e6a58eaf86cbad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6575325176438981515, guid: 1f772cb67f81e244d9e6a58eaf86cbad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6641070343905806833, guid: 1f772cb67f81e244d9e6a58eaf86cbad,
         type: 3}
@@ -1324,6 +1369,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8818035655466488946, guid: 1f772cb67f81e244d9e6a58eaf86cbad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8923693154879545495, guid: 1f772cb67f81e244d9e6a58eaf86cbad,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f772cb67f81e244d9e6a58eaf86cbad, type: 3}
@@ -1661,7 +1716,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_SelectActionTrigger: 0
-  m_HideControllerOnSelect: 0
+  m_HideControllerOnSelect: 1
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -1670,15 +1725,15 @@ MonoBehaviour:
   m_AudioClipForOnHoverEntered: {fileID: 0}
   m_PlayAudioClipOnHoverExited: 0
   m_AudioClipForOnHoverExited: {fileID: 0}
-  m_PlayHapticsOnSelectEntered: 0
-  m_HapticSelectEnterIntensity: 0
-  m_HapticSelectEnterDuration: 0
+  m_PlayHapticsOnSelectEntered: 1
+  m_HapticSelectEnterIntensity: 0.3
+  m_HapticSelectEnterDuration: 0.1
   m_PlayHapticsOnSelectExited: 0
   m_HapticSelectExitIntensity: 0
   m_HapticSelectExitDuration: 0
-  m_PlayHapticsOnHoverEntered: 0
-  m_HapticHoverEnterIntensity: 0
-  m_HapticHoverEnterDuration: 0
+  m_PlayHapticsOnHoverEntered: 1
+  m_HapticHoverEnterIntensity: 0.1
+  m_HapticHoverEnterDuration: 0.1
   m_PlayHapticsOnHoverExited: 0
   m_HapticHoverExitIntensity: 0
   m_HapticHoverExitDuration: 0
@@ -2650,6 +2705,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 769184092}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1971111035 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2489358431508387869, guid: 0170f94c224a2fe4c9a7b3b6b9c4dd7a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2083792683}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1978250833
 GameObject:
   m_ObjectHideFlags: 0
@@ -2760,7 +2821,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_SelectActionTrigger: 0
-  m_HideControllerOnSelect: 0
+  m_HideControllerOnSelect: 1
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -2769,15 +2830,15 @@ MonoBehaviour:
   m_AudioClipForOnHoverEntered: {fileID: 0}
   m_PlayAudioClipOnHoverExited: 0
   m_AudioClipForOnHoverExited: {fileID: 0}
-  m_PlayHapticsOnSelectEntered: 0
-  m_HapticSelectEnterIntensity: 0
-  m_HapticSelectEnterDuration: 0
+  m_PlayHapticsOnSelectEntered: 1
+  m_HapticSelectEnterIntensity: 0.3
+  m_HapticSelectEnterDuration: 0.1
   m_PlayHapticsOnSelectExited: 0
   m_HapticSelectExitIntensity: 0
   m_HapticSelectExitDuration: 0
-  m_PlayHapticsOnHoverEntered: 0
-  m_HapticHoverEnterIntensity: 0
-  m_HapticHoverEnterDuration: 0
+  m_PlayHapticsOnHoverEntered: 1
+  m_HapticHoverEnterIntensity: 0.1
+  m_HapticHoverEnterDuration: 0.1
   m_PlayHapticsOnHoverExited: 0
   m_HapticHoverExitIntensity: 0
   m_HapticHoverExitDuration: 0
@@ -2788,6 +2849,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1971111035, guid: 0170f94c224a2fe4c9a7b3b6b9c4dd7a, type: 3}
+      propertyPath: audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d1dfaf7da8c77d34881448d6bfba5d58, type: 3}
+    - target: {fileID: 1971111035, guid: 0170f94c224a2fe4c9a7b3b6b9c4dd7a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1971111035}
+    - target: {fileID: 2489358431508387869, guid: 0170f94c224a2fe4c9a7b3b6b9c4dd7a,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 2507679909259271505, guid: 0170f94c224a2fe4c9a7b3b6b9c4dd7a,
         type: 3}
       propertyPath: m_Name

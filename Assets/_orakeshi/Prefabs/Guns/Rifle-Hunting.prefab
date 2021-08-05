@@ -451,7 +451,7 @@ GameObject:
   - component: {fileID: 6641070343905806833}
   - component: {fileID: 6296598416458994517}
   - component: {fileID: 6296598416458994506}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rifle-Hunting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -465,7 +465,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6296598416458994507}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.423, y: 1.36, z: 0.312}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
