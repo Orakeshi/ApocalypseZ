@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1603141404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1603141405}
+  m_Layer: 10
+  m_Name: Grip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1603141405
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603141404}
+  m_LocalRotation: {x: 0.074251056, y: -0.13423835, z: 0.11376766, w: 0.98159254}
+  m_LocalPosition: {x: 0, y: 0.035, z: 0.078}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6641070343905806833}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 10.155001, y: -14.511001, z: 11.926001}
 --- !u!1 &567077727329514987
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,7 +41,7 @@ GameObject:
   - component: {fileID: 4217355896018385439}
   - component: {fileID: 9064492684868292253}
   - component: {fileID: 1153445736904634750}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: shell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,50 +110,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!1 &1210539735657490076
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1210539735657490079}
-  - component: {fileID: 1210539735657490078}
-  m_Layer: 0
-  m_Name: Grip
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1210539735657490079
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210539735657490076}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.02, z: 0.149}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 6641070343905806833}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &1210539735657490078
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210539735657490076}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.03
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1422009877410600971
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,7 +121,7 @@ GameObject:
   - component: {fileID: 6669801978461103448}
   - component: {fileID: 5668927962318249776}
   - component: {fileID: 2170625709615921774}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +200,7 @@ GameObject:
   - component: {fileID: 73576719599027782}
   - component: {fileID: 7283024267179911461}
   - component: {fileID: 7298080030004990736}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +279,7 @@ GameObject:
   - component: {fileID: 7674692612333982311}
   - component: {fileID: 3625558588102303710}
   - component: {fileID: 8302938514697078340}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: magrelease
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -372,7 +358,7 @@ GameObject:
   - component: {fileID: 4888492389392870061}
   - component: {fileID: 3709358178751459283}
   - component: {fileID: 2515456079421732442}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,6 +437,7 @@ GameObject:
   - component: {fileID: 6641070343905806833}
   - component: {fileID: 6296598416458994517}
   - component: {fileID: 6296598416458994506}
+  - component: {fileID: 298114107}
   m_Layer: 10
   m_Name: Rifle-Hunting
   m_TagString: Untagged
@@ -466,7 +453,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6296598416458994507}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.423, y: 1.36, z: 0.312}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 73576719599027782}
@@ -475,7 +462,7 @@ Transform:
   - {fileID: 7674692612333982311}
   - {fileID: 3017231360478801316}
   - {fileID: 6669801978461103448}
-  - {fileID: 1210539735657490079}
+  - {fileID: 1603141405}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -508,8 +495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
-  m_Colliders:
-  - {fileID: 1210539735657490078}
+  m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -541,9 +527,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_CustomReticle: {fileID: 0}
-  m_AttachTransform: {fileID: 1210539735657490079}
+  m_AttachTransform: {fileID: 1603141405}
   m_AttachEaseInTime: 0.15
-  m_MovementType: 1
+  m_MovementType: 0
   m_TrackPosition: 1
   m_SmoothPosition: 0
   m_SmoothPositionAmount: 5
@@ -573,6 +559,19 @@ MonoBehaviour:
   m_ThrowAngularVelocityScale: 1
   m_GravityOnDetach: 0
   m_RetainTransformParent: 1
+--- !u!65 &298114107
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6296598416458994507}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.18, y: 0.22, z: 0.97}
+  m_Center: {x: 0, y: 0.05, z: 0.24}
 --- !u!1 &6513291253018893727
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,7 +583,7 @@ GameObject:
   - component: {fileID: 2914591125154289211}
   - component: {fileID: 9199491810716938732}
   - component: {fileID: 4859993530299891529}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: boltrear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -664,7 +663,7 @@ GameObject:
   - component: {fileID: 182953196262316565}
   - component: {fileID: 644698638686605315}
   - component: {fileID: 5473719955515423394}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: bolt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -743,7 +742,7 @@ GameObject:
   - component: {fileID: 4330678138238283713}
   - component: {fileID: 5921486843857451172}
   - component: {fileID: 6155310953439838048}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: mag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -823,7 +822,7 @@ GameObject:
   - component: {fileID: 3017231360478801316}
   - component: {fileID: 3949333135819600604}
   - component: {fileID: 5875599275016565529}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: scope
   m_TagString: Untagged
   m_Icon: {fileID: 0}
