@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Weapon
   - Menu
+  - FxTemporaire
+  - Magazine
+  - PistolMagazine
+  - ARMagazine
   layers:
   - Default
   - TransparentFX
