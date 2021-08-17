@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 01235067b11d00f4c85485513c33637f,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -10789,6 +10789,7 @@ GameObject:
   - component: {fileID: 1732510119}
   - component: {fileID: 1732510118}
   - component: {fileID: 1732510117}
+  - component: {fileID: 1732510120}
   m_Layer: 0
   m_Name: SM_Prop_VendingMachine_01 (1)
   m_TagString: Untagged
@@ -10871,6 +10872,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1732510115}
   m_Mesh: {fileID: 4300000, guid: 75b116a91edd0884dabf857da16ecd3d, type: 3}
+--- !u!65 &1732510120
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732510115}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.206586, y: 2.1912463, z: 0.7007693}
+  m_Center: {x: 0.00000067875783, y: 1.0956233, z: 0.3503834}
 --- !u!1 &1741489323
 GameObject:
   m_ObjectHideFlags: 0
@@ -13187,6 +13201,7 @@ GameObject:
   - component: {fileID: 4813679272551159279}
   - component: {fileID: 4791692866295105541}
   - component: {fileID: 4791241662911139485}
+  - component: {fileID: 4800165084295400436}
   m_Layer: 0
   m_Name: SM_Prop_Streetlamp_02 (7)
   m_TagString: Untagged
@@ -13194,6 +13209,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &4800165084295400436
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4800165084295400435}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6450381, y: 3.108805, z: 0.5586195}
+  m_Center: {x: 0.0000035762787, y: 1.5544025, z: 0}
 --- !u!1 &4800197575452521544
 GameObject:
   m_ObjectHideFlags: 0
@@ -13243,6 +13271,7 @@ GameObject:
   - component: {fileID: 4822239131319483858}
   - component: {fileID: 4813691613427534306}
   - component: {fileID: 4790322472742659768}
+  - component: {fileID: 4800638934786725869}
   m_Layer: 0
   m_Name: SM_Veh_Convertable_01 (3)
   m_TagString: Untagged
@@ -13250,6 +13279,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &4800638934786725869
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4800638934786725868}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4172075, y: 1.3790792, z: 5.1057415}
+  m_Center: {x: 0.000000008741596, y: 0.7503186, z: -0.072930336}
 --- !u!1 &4800742385700665150
 GameObject:
   m_ObjectHideFlags: 0
@@ -13262,6 +13304,7 @@ GameObject:
   - component: {fileID: 4822330549567179824}
   - component: {fileID: 4812943717883834010}
   - component: {fileID: 4790743276313990064}
+  - component: {fileID: 4800742385700665151}
   m_Layer: 0
   m_Name: SM_Prop_Flag_Wall_01
   m_TagString: Untagged
@@ -13269,6 +13312,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &4800742385700665151
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4800742385700665150}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.46356747, y: 1.9534881, z: 2.2624464}
+  m_Center: {x: -0.0000016198529, y: 0.34408677, z: 1.1306357}
 --- !u!1 &4800778529118170300
 GameObject:
   m_ObjectHideFlags: 0
@@ -13894,6 +13950,7 @@ GameObject:
   - component: {fileID: 7205155213737188448}
   - component: {fileID: 7196684773097353056}
   - component: {fileID: 7164426818126323640}
+  - component: {fileID: 7172167114192130967}
   m_Layer: 0
   m_Name: SM_Prop_Phone_01
   m_TagString: Untagged
@@ -13901,6 +13958,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7172167114192130967
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7172167114192130966}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5538724, y: 1.995947, z: 0.39932755}
+  m_Center: {x: -0.00000011153219, y: 0.99797344, z: 0.0000005960768}
 --- !u!1 &7172167218759349971
 GameObject:
   m_ObjectHideFlags: 0
@@ -13913,6 +13983,7 @@ GameObject:
   - component: {fileID: 7202236093793842751}
   - component: {fileID: 7196641340262557245}
   - component: {fileID: 7164674005025425737}
+  - component: {fileID: 7172167218759349972}
   m_Layer: 0
   m_Name: SM_Prop_Doghouse_01 (1)
   m_TagString: Untagged
@@ -13920,6 +13991,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7172167218759349972
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7172167218759349971}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2308928, y: 1.2637181, z: 1.1894777}
+  m_Center: {x: 0.066735394, y: 0.6290451, z: -0.0176062}
 --- !u!1 &7172213954747200104
 GameObject:
   m_ObjectHideFlags: 0
@@ -13932,6 +14016,7 @@ GameObject:
   - component: {fileID: 7202376191950198616}
   - component: {fileID: 7195224905429629954}
   - component: {fileID: 7164401297433218248}
+  - component: {fileID: 7172213954747200105}
   m_Layer: 0
   m_Name: SM_Prop_Barbeque_01
   m_TagString: Untagged
@@ -13939,6 +14024,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7172213954747200105
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7172213954747200104}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7624631, y: 1.0037713, z: 0.79703975}
+  m_Center: {x: -0.00000014901161, y: 0.50188565, z: 0.1137207}
 --- !u!1 &7173487546167463343
 GameObject:
   m_ObjectHideFlags: 0
@@ -13969,6 +14067,7 @@ GameObject:
   - component: {fileID: 7205035337952548657}
   - component: {fileID: 7194595474363229173}
   - component: {fileID: 7165196038762668419}
+  - component: {fileID: 7173544697324279074}
   m_Layer: 0
   m_Name: SM_Prop_RubbishBin_02 (1)
   m_TagString: Untagged
@@ -13976,6 +14075,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7173544697324279074
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7173544697324279073}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.74051017, y: 1.1158772, z: 1.016025}
+  m_Center: {x: 0, y: 0.5579386, z: 0.23029523}
 --- !u!1 &7173607661518897521
 GameObject:
   m_ObjectHideFlags: 0
@@ -13989,6 +14101,7 @@ GameObject:
   - component: {fileID: 7194542971322764171}
   - component: {fileID: 7165039782147512315}
   - component: {fileID: 7165166867931996143}
+  - component: {fileID: 7173607661518897522}
   m_Layer: 0
   m_Name: SM_Env_Tree_03_Framed (1)
   m_TagString: Untagged
@@ -13996,6 +14109,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7173607661518897522
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7173607661518897521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9846336, y: 3.2636719, z: 1.1570201}
+  m_Center: {x: -0.017116874, y: 1.6318359, z: -0.04677871}
 --- !u!1 &7173642439376260018
 GameObject:
   m_ObjectHideFlags: 0
@@ -14008,6 +14134,7 @@ GameObject:
   - component: {fileID: 7204690200816712408}
   - component: {fileID: 7194706038431687826}
   - component: {fileID: 7163161408890090122}
+  - component: {fileID: 7173642439376260019}
   m_Layer: 0
   m_Name: SM_Prop_ParkBench_01
   m_TagString: Untagged
@@ -14015,6 +14142,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7173642439376260019
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7173642439376260018}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0794647, y: 1.0482581, z: 0.6325681}
+  m_Center: {x: -0.050715655, y: 0.52412903, z: -0.006408782}
 --- !u!1 &7174053492194562196
 GameObject:
   m_ObjectHideFlags: 0
@@ -14027,6 +14167,7 @@ GameObject:
   - component: {fileID: 7202110374313110020}
   - component: {fileID: 7196678598381176484}
   - component: {fileID: 7164878946871476384}
+  - component: {fileID: 7174053492194562197}
   m_Layer: 0
   m_Name: SM_Prop_Chair_05 (4)
   m_TagString: Untagged
@@ -14034,6 +14175,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7174053492194562197
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7174053492194562196}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6653883, y: 1.0040165, z: 0.6019249}
+  m_Center: {x: -0.00000032782555, y: 0.50200826, z: -0.000000014901161}
 --- !u!1 &7174087043058257726
 GameObject:
   m_ObjectHideFlags: 0
@@ -14064,6 +14218,7 @@ GameObject:
   - component: {fileID: 7205349668370598705}
   - component: {fileID: 7194928474244229807}
   - component: {fileID: 7163192062539954161}
+  - component: {fileID: 7174182583689944274}
   m_Layer: 0
   m_Name: SM_Env_Fence_White_Straight_01 (2)
   m_TagString: Untagged
@@ -14071,6 +14226,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7174182583689944274
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7174182583689944273}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.499999, y: 1.1096003, z: 0.104887694}
+  m_Center: {x: -1.2499981, y: 0.55480015, z: 0.0000073239207}
 --- !u!1 &7174182584809734953
 GameObject:
   m_ObjectHideFlags: 0
@@ -14083,6 +14251,7 @@ GameObject:
   - component: {fileID: 7205349669389964489}
   - component: {fileID: 7194928475464627543}
   - component: {fileID: 7163192063559051273}
+  - component: {fileID: 7174182584809734954}
   m_Layer: 0
   m_Name: SM_Env_Fence_White_Straight_01 (3)
   m_TagString: Untagged
@@ -14090,6 +14259,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7174182584809734954
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7174182584809734953}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4999993, y: 1.1096003, z: 0.10488773}
+  m_Center: {x: -1.2499982, y: 0.55480015, z: 0.0000073363226}
 --- !u!4 &7177386674497398051
 Transform:
   m_ObjectHideFlags: 0
