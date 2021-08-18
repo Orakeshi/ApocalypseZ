@@ -29,18 +29,12 @@ namespace Orakeshi.ApocalypseZ.UI
         private void UpdateGunImage()
         {
             gunLogo.SetActive(true);
-            GameObject weapon = GameObject.FindWithTag("Gun");
-
-            foreach (var sprite in gunLogos)
+            foreach (Sprite sprite in gunLogos)
             {
-                if (sprite.name == weapon.name)
+                if (sprite.name == currentWeapon.transform.name)
                 {
                     tempSprite = sprite;
                     gunLogo.GetComponent<Image>().sprite = tempSprite;
-                }
-                else
-                {
-                    return;
                 }
             }
         }
@@ -67,15 +61,24 @@ namespace Orakeshi.ApocalypseZ.UI
                     gunLogo.SetActive(false);
                 }
             }
-            if (currentWeapon)
+            if (currentWeapon == null)
             {
-                Gun currentGun = currentWeapon.GetComponent<Gun>();
-                if (currentGun.magazine)
-                {
-                    UpdateAmmoRemaining(currentGun.magazine.numberOfBullet);
-                }
+                foundWeapon = false;
+                gunLogo.SetActive(false);
             }
 
+            if (foundWeapon)
+            {
+
+                if (currentWeapon)
+                {
+                    Gun currentGun = currentWeapon.GetComponent<Gun>();
+                    if (currentGun.magazine)
+                    {
+                        UpdateAmmoRemaining(currentGun.magazine.numberOfBullet);
+                    }
+                }
+            }
         }
     }
 }
