@@ -17,7 +17,15 @@ namespace Orakeshi.ApocalypseZ.Zombie
 
         private void Update()
         {
-            navMeshAgent.destination = movePositionTransform.position;
+            if (movePositionTransform != null)
+            {
+                navMeshAgent.destination = movePositionTransform.position;
+            }
+            else
+            {
+                navMeshAgent.destination = gameObject.transform.position;
+            }
+            
         }
     }
 }
