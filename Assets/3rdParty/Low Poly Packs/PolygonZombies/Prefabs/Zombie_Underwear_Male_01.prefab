@@ -7836,6 +7836,7 @@ GameObject:
   - component: {fileID: 95791246582969478}
   - component: {fileID: -2134395985619466796}
   - component: {fileID: -7366031320971134339}
+  - component: {fileID: -2538169812250654559}
   m_Layer: 0
   m_Name: Zombie_Underwear_Male_01
   m_TagString: Untagged
@@ -7936,7 +7937,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1965423065467750}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee5f6b0ad0ecf0c4a866dde1572f4941, type: 3}
+  m_Script: {fileID: 11500000, guid: 584eecb93e5dcc3449741f2b496767b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   movePositionTransform: {fileID: 0}
@@ -7962,6 +7963,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &-2538169812250654559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965423065467750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 584eecb93e5dcc3449741f2b496767b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movePositionTransform: {fileID: 0}
 --- !u!1 &1965466310304604
 GameObject:
   m_ObjectHideFlags: 0
