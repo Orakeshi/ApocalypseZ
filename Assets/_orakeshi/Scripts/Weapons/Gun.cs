@@ -17,6 +17,7 @@ namespace Orakeshi.ApocalypseZ.Weapon
         [SerializeField] private Transform barrel;
         [SerializeField] private Transform casingExitLocation;
         public Magazine magazine;
+        [Tooltip("Specify magazine location on gun")] [SerializeField] public Transform magazineLocation;
         public XRBaseInteractor socketInteractor;
 
         [Header("Settings")]
@@ -35,10 +36,11 @@ namespace Orakeshi.ApocalypseZ.Weapon
 
         private Coroutine current;
 
-
+        private bool ammoCheck = true;
         public void AddMagazine(XRBaseInteractable interactable)
         {
             magazine = interactable.GetComponent<Magazine>();
+            magazine.transform.parent = magazineLocation;
             audioSource.PlayOneShot(reload);
         }
 
@@ -132,6 +134,24 @@ namespace Orakeshi.ApocalypseZ.Weapon
 
             //Destroy casing after X seconds
             Destroy(tempCasing, destroyTimer);
+        }
+
+        private void Update()
+        {
+            if (ammoCheck)
+            {
+                if (magazine && magazine.numberOfBullet <= 0)
+                {
+                    StopFire();
+                    audioSource.PlayOneShot(noAmmo);
+                    ammoCheck = false;
+                }
+            }
+            if (magazine && magazine.numberOfBullet > 0)
+            {
+                ammoCheck = true;
+            }
+
         }
 
     }
