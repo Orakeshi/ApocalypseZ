@@ -5451,7 +5451,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4057976797115788}
   - component: {fileID: 95259821634282768}
-  - component: {fileID: 6567664752596040289}
+  - component: {fileID: 6184431179203069282}
+  - component: {fileID: 263386412140207570}
   m_Layer: 0
   m_Name: Zombie_Jock_Male_01
   m_TagString: Untagged
@@ -5543,7 +5544,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &6567664752596040289
+--- !u!114 &6184431179203069282
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5552,12 +5553,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 1562126803887444}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33aabe1a2dec93349b06e6e5dc51bc06, type: 3}
+  m_Script: {fileID: 11500000, guid: ee5f6b0ad0ecf0c4a866dde1572f4941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathCreator: {fileID: 0}
-  endOfPathInstruction: 0
-  speed: 1
+  movePositionTransform: {fileID: 0}
+--- !u!195 &263386412140207570
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562126803887444}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 1
+  m_Acceleration: 1
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1590648828359392
 GameObject:
   m_ObjectHideFlags: 0

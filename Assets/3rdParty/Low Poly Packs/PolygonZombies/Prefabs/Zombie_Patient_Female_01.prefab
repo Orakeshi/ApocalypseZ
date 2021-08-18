@@ -1026,7 +1026,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4722512408285476}
   - component: {fileID: 95194316808250032}
-  - component: {fileID: -6224954956043337842}
+  - component: {fileID: 1372985472396095600}
+  - component: {fileID: -337672429205604361}
   m_Layer: 0
   m_Name: Zombie_Patient_Female_01
   m_TagString: Untagged
@@ -1118,7 +1119,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-6224954956043337842
+--- !u!114 &1372985472396095600
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1127,12 +1128,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 1172417875531008}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33aabe1a2dec93349b06e6e5dc51bc06, type: 3}
+  m_Script: {fileID: 11500000, guid: ee5f6b0ad0ecf0c4a866dde1572f4941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathCreator: {fileID: 0}
-  endOfPathInstruction: 0
-  speed: 1
+  movePositionTransform: {fileID: 0}
+--- !u!195 &-337672429205604361
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172417875531008}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 1
+  m_Acceleration: 1
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1178209399669858
 GameObject:
   m_ObjectHideFlags: 0
