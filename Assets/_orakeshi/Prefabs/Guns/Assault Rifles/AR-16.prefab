@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: -5490700961097189040}
   m_Layer: 10
   m_Name: AR-16
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -268,7 +268,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4047249851527242160}
-        m_MethodName: StoreFire
+        m_MethodName: StopFire
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -281,7 +281,7 @@ MonoBehaviour:
   m_CustomReticle: {fileID: 0}
   m_AttachTransform: {fileID: 4800507181217337904}
   m_AttachEaseInTime: 0.15
-  m_MovementType: 0
+  m_MovementType: 2
   m_TrackPosition: 1
   m_SmoothPosition: 0
   m_SmoothPositionAmount: 5
@@ -344,8 +344,8 @@ MonoBehaviour:
   gunAnimator: {fileID: -5490700961097189040}
   barrel: {fileID: 4047249850288033405}
   casingExitLocation: {fileID: 4193082583393345812}
-  magazine: {fileID: 5824368754548804834, guid: 9293652add29aa243b532098a1215259,
-    type: 3}
+  magazine: {fileID: 0}
+  magazineLocation: {fileID: 4047249849877801566}
   socketInteractor: {fileID: 4047249851532552542}
   destroyTimer: 2
   ejectPower: 150

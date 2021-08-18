@@ -565,7 +565,7 @@ GameObject:
   - component: {fileID: 5295445963480563898}
   m_Layer: 10
   m_Name: Glock
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -657,7 +657,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2729716594335541984}
-        m_MethodName: StoreFire
+        m_MethodName: StopFire
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -670,7 +670,7 @@ MonoBehaviour:
   m_CustomReticle: {fileID: 0}
   m_AttachTransform: {fileID: 8220010180130254830}
   m_AttachEaseInTime: 0.15
-  m_MovementType: 0
+  m_MovementType: 2
   m_TrackPosition: 1
   m_SmoothPosition: 0
   m_SmoothPositionAmount: 5
@@ -740,6 +740,7 @@ MonoBehaviour:
   barrel: {fileID: 8638660049030768964}
   casingExitLocation: {fileID: 3276181051065841580}
   magazine: {fileID: 0}
+  magazineLocation: {fileID: 8638660050080142163}
   socketInteractor: {fileID: 8638660049480189242}
   destroyTimer: 2
   ejectPower: 150

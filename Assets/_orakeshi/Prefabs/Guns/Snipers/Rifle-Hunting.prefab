@@ -440,7 +440,7 @@ GameObject:
   - component: {fileID: 298114107}
   m_Layer: 10
   m_Name: Rifle-Hunting
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

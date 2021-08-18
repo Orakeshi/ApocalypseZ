@@ -191,7 +191,7 @@ MonoBehaviour:
   m_CustomReticle: {fileID: 0}
   m_AttachTransform: {fileID: 0}
   m_AttachEaseInTime: 0.15
-  m_MovementType: 0
+  m_MovementType: 2
   m_TrackPosition: 1
   m_SmoothPosition: 0
   m_SmoothPositionAmount: 5
@@ -233,4 +233,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce6c7032f9114f842b01951219f98206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfBullet: 24
+  numberOfBullet: 0
