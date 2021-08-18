@@ -44,6 +44,7 @@ namespace Orakeshi.ApocalypseZ.UI
                 {
                     GameObject temp = Instantiate(weapon);
                     temp.transform.position = new Vector3(0.2920005f, 1.727f, 0.462f);
+                    temp.name = weapon.name;
                     weaponsSpawned.Add(temp);
                 }
                 else

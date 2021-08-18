@@ -30,29 +30,23 @@ namespace Orakeshi.ApocalypseZ.Zombie
 
         IEnumerator ZombieSpawn()
         {
-            int random;
-            random = Random.Range(0, 9);
+
+            int randomSpawn = Random.Range(0, ZombieSpawnPoints.Length);
 
             int randomZombie = Random.Range(0, ZombiePrefab.Length);
 
-            GameObject currentZombie = Instantiate(ZombiePrefab[randomZombie], ZombieSpawnPoints[random].transform.position, Quaternion.identity);
+            
 
-            //if (random == 0)
-            //{
-            //    currentZombie.GetComponent<PlayerNavMesh>().movePositionTransform = Player;
-            //    //ZombiePrefab.GetComponent<PathFollower>().pathCreator = routes[0];
-            //}
-            //else
-            //{
-            //    currentZombie.GetComponent<PlayerNavMesh>().movePositionTransform = Player;
-            //    //ZombiePrefab.GetComponent<PathFollower>().pathCreator = routes[1];
-            //}
+            GameObject currentZombie = Instantiate(ZombiePrefab[randomZombie], ZombieSpawnPoints[randomSpawn].transform.position, Quaternion.identity);
 
             currentZombie.GetComponent<ZombieNavMesh>().movePositionTransform = Player;
+
+            
 
             yield return new WaitForSeconds(10f);
             StartCoroutine(ZombieSpawn());
         }
+
 
 
     }
