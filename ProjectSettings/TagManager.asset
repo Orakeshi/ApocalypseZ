@@ -10,6 +10,7 @@ TagManager:
   - Magazine
   - PistolMagazine
   - ARMagazine
+  - Gun
   layers:
   - Default
   - TransparentFX
