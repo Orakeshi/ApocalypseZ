@@ -97,7 +97,7 @@ namespace Orakeshi.ApocalypseZ.Weapon
                         tempFlash = Instantiate(muzzleFlashPrefab, barrel.position, barrel.rotation);
 
                         //Destroy the muzzle flash effect
-                        Destroy(tempFlash, 0.1f);
+                        Destroy(tempFlash, 0.05f);
                     }
 
                     GameObject spawnedBullet = Instantiate(bullet, barrel.position, barrel.rotation);

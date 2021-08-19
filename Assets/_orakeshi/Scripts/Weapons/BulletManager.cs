@@ -17,7 +17,7 @@ namespace Orakeshi.ApocalypseZ.Weapon
                     if (FX.name.Contains("Wood"))
                     {
                         Instantiate(FX);
-                        FX.transform.position = gameObject.transform.position;
+                        FX.transform.position = other.GetContact(0).point;
                         Destroy(this.gameObject);
                         Destroy(FX, 1);
                     }
@@ -28,14 +28,18 @@ namespace Orakeshi.ApocalypseZ.Weapon
             //{
 
             //}
+
+            // If blood effect in scene - Play on impact when colliding with zombie
+
             else
             {
                 Instantiate(bulletFX[0]);
-                bulletFX[0].transform.position = gameObject.transform.position;
+                bulletFX[0].transform.position = other.GetContact(0).point;
                 Destroy(this.gameObject);
                 Destroy(bulletFX[0], 1);
                 
             }
+            
         }
     }
 }
