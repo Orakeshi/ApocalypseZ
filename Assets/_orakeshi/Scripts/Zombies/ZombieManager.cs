@@ -10,6 +10,7 @@ namespace Orakeshi.ApocalypseZ.Zombie
     {
         public Transform[] ZombieSpawnPoints;
         public GameObject[] ZombiePrefab;
+        public GameObject[] BossZombie;
 
         public PathCreator[] routes;
 
@@ -17,6 +18,7 @@ namespace Orakeshi.ApocalypseZ.Zombie
 
         public int zombieHealth = 70;
         public int zombieDamage = 5;
+        public int totalDead = 0;
 
         public IEnumerator ZombieSpawn(string zombieType)
         {
@@ -25,8 +27,6 @@ namespace Orakeshi.ApocalypseZ.Zombie
                 int randomSpawn = Random.Range(0, ZombieSpawnPoints.Length);
 
                 int randomZombie = Random.Range(0, ZombiePrefab.Length);
-
-
 
                 GameObject currentZombie = Instantiate(ZombiePrefab[randomZombie], ZombieSpawnPoints[randomSpawn].transform.position, Quaternion.identity);
 

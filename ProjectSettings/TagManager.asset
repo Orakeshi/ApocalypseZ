@@ -12,6 +12,7 @@ TagManager:
   - ARMagazine
   - Gun
   - Tree
+  - Zombie
   layers:
   - Default
   - TransparentFX

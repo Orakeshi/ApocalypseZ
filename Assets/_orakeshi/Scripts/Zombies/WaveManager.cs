@@ -6,7 +6,6 @@ namespace Orakeshi.ApocalypseZ.Zombie
 {
     public class WaveManager : MonoBehaviour
     {
-        int totalDeadZombies = 0;
         float timeToSpawn = 10;
         [SerializeField] public ZombieManager zombieManager;
 
@@ -23,13 +22,15 @@ namespace Orakeshi.ApocalypseZ.Zombie
 
         void NextWave()
         {
-            if(totalDeadZombies % 20 == 0)
+            if((zombieManager.totalDead % 20) == 0 && zombieManager.totalDead != 0)
             {
-                zombieManager.ZombieSpawn("Boss");
+                zombieManager.StartCoroutine(zombieManager.ZombieSpawn("Boss"));
+                print("Doing");
             }
             else
             {
-                zombieManager.ZombieSpawn("Zombie");
+                print("Doing");
+                zombieManager.StartCoroutine(zombieManager.ZombieSpawn("Zombie"));
                 StartCoroutine(ZombieSpawnWrapper());
             }
             

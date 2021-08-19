@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Orakeshi.ApocalypseZ.Zombie;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +8,7 @@ namespace Orakeshi.ApocalypseZ.Weapon
     public class BulletManager : MonoBehaviour
     {
         public GameObject[] bulletFX;
+        public int bulletDamage;
         private void OnCollisionEnter(Collision other)
         {
             
@@ -19,15 +21,18 @@ namespace Orakeshi.ApocalypseZ.Weapon
                         Instantiate(FX);
                         FX.transform.position = other.GetContact(0).point;
                         Destroy(this.gameObject);
-                        Destroy(FX, 1);
+                        //Destroy(FX, 3);
                     }
                 }
 
             }
-            //else if (other.gameObject.tag == "Zombie")
-            //{
-
-            //}
+            else if (other.gameObject.tag == "Zombie")
+            {
+                ZombieEnemy zombie = other.transform.GetComponent<ZombieEnemy>();
+                print("Hit Zom");
+                zombie.damageTaken = bulletDamage;
+                zombie.damaged = true;
+            }
 
             // If blood effect in scene - Play on impact when colliding with zombie
 
@@ -36,10 +41,10 @@ namespace Orakeshi.ApocalypseZ.Weapon
                 Instantiate(bulletFX[0]);
                 bulletFX[0].transform.position = other.GetContact(0).point;
                 Destroy(this.gameObject);
-                Destroy(bulletFX[0], 1);
-                
+                //Destroy(bulletFX[0], 1);
+
             }
-            
+
         }
     }
 }

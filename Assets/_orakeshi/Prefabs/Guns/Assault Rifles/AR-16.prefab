@@ -348,8 +348,8 @@ MonoBehaviour:
   magazineLocation: {fileID: 4047249849877801566}
   socketInteractor: {fileID: 4047249851532552542}
   destroyTimer: 2
-  ejectPower: 150
-  bulletSpeed: 1000
+  ejectPower: 1000
+  bulletSpeed: 30
   fireRate: 11
   audioSource: {fileID: 1918887511457414614}
   fireSound: {fileID: 8300000, guid: d1dfaf7da8c77d34881448d6bfba5d58, type: 3}

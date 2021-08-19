@@ -7574,9 +7574,11 @@ GameObject:
   - component: {fileID: 2761334278740601591}
   - component: {fileID: 8241914121081859044}
   - component: {fileID: -3624562888299501761}
+  - component: {fileID: 3224451610974333890}
+  - component: {fileID: -5501825489651462932}
   m_Layer: 0
   m_Name: Zombie_FastfoodWorker_Male_02
-  m_TagString: Untagged
+  m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7813,6 +7815,33 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8d8ba7ed3a907c54a80d9daaf5086316, type: 3}
   - {fileID: 8300000, guid: 55fcd563b1f506c4e9c439d88c145fbe, type: 3}
   - {fileID: 8300000, guid: 12fd9e4f2a3a1fe4ab89c563105c8c8d, type: 3}
+--- !u!114 &3224451610974333890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3244797823290191799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d477563e054b7349939a9c57f90f38a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damaged: 0
+  damageTaken: 0
+--- !u!65 &-5501825489651462932
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3244797823290191799}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.81380963, y: 1.8372964, z: 1}
+  m_Center: {x: 0.009839714, y: 0.95166236, z: 0}
 --- !u!1 &3244808407937275565
 GameObject:
   m_ObjectHideFlags: 0

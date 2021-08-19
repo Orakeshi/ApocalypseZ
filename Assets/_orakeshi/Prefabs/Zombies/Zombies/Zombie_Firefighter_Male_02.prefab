@@ -2924,9 +2924,11 @@ GameObject:
   - component: {fileID: -7394033787087461283}
   - component: {fileID: -2915550704204842228}
   - component: {fileID: 6652665312902876906}
+  - component: {fileID: 6706907716834393629}
+  - component: {fileID: -7342388231331745381}
   m_Layer: 0
   m_Name: Zombie_Firefighter_Male_02
-  m_TagString: Untagged
+  m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3260,6 +3262,33 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &6706907716834393629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5452171511021897014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d477563e054b7349939a9c57f90f38a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damaged: 0
+  damageTaken: 0
+--- !u!65 &-7342388231331745381
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5452171511021897014}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.81380963, y: 1.8372964, z: 1}
+  m_Center: {x: 0.009839714, y: 0.95166236, z: 0}
 --- !u!1 &5452175919153846812
 GameObject:
   m_ObjectHideFlags: 0
