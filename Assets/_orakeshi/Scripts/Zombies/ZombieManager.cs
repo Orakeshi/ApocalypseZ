@@ -15,36 +15,31 @@ namespace Orakeshi.ApocalypseZ.Zombie
 
         public Transform Player;
 
-        void Start()
+        public int zombieHealth = 70;
+        public int zombieDamage = 5;
+
+        public IEnumerator ZombieSpawn(string zombieType)
         {
-            StartCoroutine(ZombieSpawn());
-            //SpawnNewZombie();
-        }
+            if(zombieType == "Zombie")
+            {
+                int randomSpawn = Random.Range(0, ZombieSpawnPoints.Length);
 
-        void SpawnNewZombie()
-        {
-            int random;
-            random = Random.Range(0, 10);
-            //Instantiate(ZombiePrefab, ZombieSpawnPoints[random].transform.position, Quaternion.identity);
-        }
+                int randomZombie = Random.Range(0, ZombiePrefab.Length);
 
-        IEnumerator ZombieSpawn()
-        {
 
-            int randomSpawn = Random.Range(0, ZombieSpawnPoints.Length);
 
-            int randomZombie = Random.Range(0, ZombiePrefab.Length);
+                GameObject currentZombie = Instantiate(ZombiePrefab[randomZombie], ZombieSpawnPoints[randomSpawn].transform.position, Quaternion.identity);
 
-            
+                currentZombie.GetComponent<ZombieNavMesh>().movePositionTransform = Player;
 
-            GameObject currentZombie = Instantiate(ZombiePrefab[randomZombie], ZombieSpawnPoints[randomSpawn].transform.position, Quaternion.identity);
+                yield return null;
+            }
 
-            currentZombie.GetComponent<ZombieNavMesh>().movePositionTransform = Player;
+            else
+            {
+                // Spawn big zombie
+            }
 
-            
-
-            yield return new WaitForSeconds(10f);
-            StartCoroutine(ZombieSpawn());
         }
 
 
