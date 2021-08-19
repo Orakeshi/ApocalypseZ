@@ -11,6 +11,7 @@ TagManager:
   - PistolMagazine
   - ARMagazine
   - Gun
+  - Tree
   layers:
   - Default
   - TransparentFX

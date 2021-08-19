@@ -336,8 +336,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 178681aef0e365f4990f6947aee4b566, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 7541706553914277108, guid: 408518c56a012ae45bd3cf9519b3a386, type: 3}
-  casingPrefab: {fileID: 7541706553914277108, guid: 408518c56a012ae45bd3cf9519b3a386,
+  bullet: {fileID: 2965514794207085034, guid: bf2422b5592cd3247990ef885ae859c1, type: 3}
+  casingPrefab: {fileID: 4860146010044798852, guid: 029b62c9ab37cf348b92a32ca851b701,
     type: 3}
   muzzleFlashPrefab: {fileID: 4528739135714965582, guid: e3204ddee82bb1e4db9315e9eb3abc96,
     type: 3}
@@ -349,7 +349,7 @@ MonoBehaviour:
   socketInteractor: {fileID: 4047249851532552542}
   destroyTimer: 2
   ejectPower: 150
-  bulletSpeed: 30
+  bulletSpeed: 1000
   fireRate: 11
   audioSource: {fileID: 1918887511457414614}
   fireSound: {fileID: 8300000, guid: d1dfaf7da8c77d34881448d6bfba5d58, type: 3}

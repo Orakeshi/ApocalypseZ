@@ -731,8 +731,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 178681aef0e365f4990f6947aee4b566, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 7738512629243070013, guid: 75397a88878d6ca4cb1e82caa7caf24f, type: 3}
-  casingPrefab: {fileID: 7738512629243070013, guid: 75397a88878d6ca4cb1e82caa7caf24f,
+  bullet: {fileID: 3055874200250844776, guid: 38318236d8d4e084dbfd8d6166234561, type: 3}
+  casingPrefab: {fileID: 1364910671875813485, guid: 6d3e9b826af3f33438433c6b1f94f851,
     type: 3}
   muzzleFlashPrefab: {fileID: 4528739135714965582, guid: e3204ddee82bb1e4db9315e9eb3abc96,
     type: 3}
