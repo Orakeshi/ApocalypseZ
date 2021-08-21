@@ -82,12 +82,12 @@ namespace Orakeshi.ApocalypseZ.Weapon
 
         private IEnumerator Fire()
         {
-            if (magazine && magazine.numberOfBullet > 0)
+            if (magazine && magazine.NumberOfBullets > 0)
             {
                 gunAnimator.SetTrigger("Fire");
                 while (true)
                 {
-                    magazine.numberOfBullet--;
+                    magazine.NumberOfBullets--;
                     audioSource.PlayOneShot(fireSound);
 
                     if (muzzleFlashPrefab)
@@ -141,14 +141,14 @@ namespace Orakeshi.ApocalypseZ.Weapon
         {
             if (ammoCheck)
             {
-                if (magazine && magazine.numberOfBullet <= 0)
+                if (magazine && magazine.NumberOfBullets <= 0)
                 {
                     StopFire();
                     audioSource.PlayOneShot(noAmmo);
                     ammoCheck = false;
                 }
             }
-            if (magazine && magazine.numberOfBullet > 0)
+            if (magazine && magazine.NumberOfBullets > 0)
             {
                 ammoCheck = true;
             }

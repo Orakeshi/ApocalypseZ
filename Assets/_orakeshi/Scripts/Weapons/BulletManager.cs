@@ -30,7 +30,7 @@ namespace Orakeshi.ApocalypseZ.Weapon
             {
                 ZombieEnemy zombie = other.transform.GetComponent<ZombieEnemy>();
                 print("Hit Zom");
-                zombie.damageTaken = bulletDamage;
+                zombie.TakeDamage(bulletDamage);
                 zombie.damaged = true;
             }
 

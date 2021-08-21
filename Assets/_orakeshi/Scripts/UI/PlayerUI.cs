@@ -75,7 +75,7 @@ namespace Orakeshi.ApocalypseZ.UI
                     Gun currentGun = currentWeapon.GetComponent<Gun>();
                     if (currentGun.magazine)
                     {
-                        UpdateAmmoRemaining(currentGun.magazine.numberOfBullet);
+                        UpdateAmmoRemaining(currentGun.magazine.NumberOfBullets);
                     }
                 }
             }

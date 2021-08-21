@@ -25,6 +25,20 @@ namespace Orakeshi.ApocalypseZ.Zombie
             {
                 navMeshAgent.destination = gameObject.transform.position;
             }
+
+            if (!navMeshAgent.pathPending)
+            {
+                if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
+                {
+                    if (!navMeshAgent.hasPath || navMeshAgent.velocity.sqrMagnitude == 0f)
+                    {
+                        ZombieEnemy zombie = gameObject.GetComponent<ZombieEnemy>();
+                        Animator anim = zombie.GetComponent<Animator>();
+                        anim.SetTrigger("Attack");
+                    }
+                }
+            }
+            
             
         }
     }
