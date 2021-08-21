@@ -7,9 +7,16 @@ namespace Orakeshi.ApocalypseZ.Zombie
 {
     public class ZombieEnemy : MonoBehaviour, IDamageable
     {
+        private DeathTracker deathTracker; 
         int maxHealth = 100;
         int currentHealth = 100;
         int damageOutput = 5;
+
+        void Start()
+        {
+
+            deathTracker = GameObject.Find("ZombieManager").GetComponent<DeathTracker>();
+        }
 
         public int CurrentHealth
         {
@@ -40,6 +47,7 @@ namespace Orakeshi.ApocalypseZ.Zombie
             currentHealth = currentHealth - damage;
             if (currentHealth <= 0)
             {
+                deathTracker.TotalZombieDeaths++;
                 Animator deathAnim = GetComponent<Animator>();
                 deathAnim.SetTrigger("Dead");
                 GetComponent<AudioSource>().enabled = false;
@@ -57,34 +65,13 @@ namespace Orakeshi.ApocalypseZ.Zombie
 
         void Attack()
         {
+            Animator deathAnim = GetComponent<Animator>();
+
+            // When the zombie is in range of the player, play the attack animation
+
+            //deathAnim.SetTrigger("Attack");
             // Play attack animation
         }
-
-
-        public bool damaged = false;
-        public int damageTaken;
-
-        //void ZombieDead()
-        //{
-        //    print("DEAD");
-        //    Destroy(gameObject);
-        //    zombieManager.totalDead += 1;
-        //}
-
-        private void Update()
-        {
-            //if (damaged)
-            //{
-            //    ZombieDamaged();
-            //    damaged = false;
-            //}
-
-            //if(health <= 0)
-            //{
-            //    ZombieDead();
-            //}
-        }
-
     }
 }
 

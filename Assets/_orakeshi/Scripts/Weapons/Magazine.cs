@@ -6,7 +6,7 @@ namespace Orakeshi.ApocalypseZ.Weapon
     public class Magazine : MonoBehaviour
     {
         [SerializeField]
-        private int numberOfBullets = 99999;
+        private int numberOfBullets = 900000000;
 
         public int NumberOfBullets
         {

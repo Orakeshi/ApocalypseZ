@@ -10,15 +10,25 @@ namespace Orakeshi.ApocalypseZ.Zombie
     {
         public Transform[] ZombieSpawnPoints;
         public GameObject[] ZombiePrefab;
-        public GameObject[] BossZombie;
+        public GameObject bossZombie;
 
         public PathCreator[] routes;
 
         public Transform Player;
 
-        public int zombieHealth = 70;
-        public int zombieDamage = 5;
-        public int totalDead = 0;
+        private int totalDead = 0;
+
+        public int TotalDead
+        {
+            get
+            {
+                return totalDead;
+            }
+            set
+            {
+                totalDead = value;
+            }
+        }
 
         public IEnumerator ZombieSpawn(string zombieType)
         {
@@ -37,6 +47,7 @@ namespace Orakeshi.ApocalypseZ.Zombie
 
             else
             {
+                
                 // Spawn big zombie
             }
 

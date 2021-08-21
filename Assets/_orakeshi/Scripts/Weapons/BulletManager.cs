@@ -31,7 +31,7 @@ namespace Orakeshi.ApocalypseZ.Weapon
                 ZombieEnemy zombie = other.transform.GetComponent<ZombieEnemy>();
                 print("Hit Zom");
                 zombie.TakeDamage(bulletDamage);
-                zombie.damaged = true;
+                //zombie.damaged = true;
             }
 
             // If blood effect in scene - Play on impact when colliding with zombie

@@ -5947,6 +5947,7 @@ GameObject:
   m_Component:
   - component: {fileID: 855102330}
   - component: {fileID: 855102329}
+  - component: {fileID: 855102331}
   m_Layer: 0
   m_Name: ZombieManager
   m_TagString: Untagged
@@ -5991,14 +5992,11 @@ MonoBehaviour:
   - {fileID: 3713445460419772304, guid: 3c376a69e45ad3d42908803f97f0fcfd, type: 3}
   - {fileID: 8110242683522518554, guid: c2f040689a9532343b4a19bc79430905, type: 3}
   - {fileID: 5452171511021897014, guid: c78d3531a2f120048a601c06f9ee3840, type: 3}
-  BossZombie: []
+  bossZombie: {fileID: 0}
   routes:
   - {fileID: 610441404}
   - {fileID: 1762840963}
   Player: {fileID: 80065840}
-  zombieHealth: 70
-  zombieDamage: 5
-  totalDead: 0
 --- !u!4 &855102330
 Transform:
   m_ObjectHideFlags: 0
@@ -6015,6 +6013,18 @@ Transform:
   m_Father: {fileID: 1114599896}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &855102331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855102328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a249da17ae643a4788851b2ea1d3924, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &872248348
 GameObject:
   m_ObjectHideFlags: 0
@@ -8365,6 +8375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zombieManager: {fileID: 855102329}
+  deathTracker: {fileID: 855102331}
 --- !u!1 &1122113203
 GameObject:
   m_ObjectHideFlags: 0
