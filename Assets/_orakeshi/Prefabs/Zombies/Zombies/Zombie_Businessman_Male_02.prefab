@@ -2787,7 +2787,7 @@ GameObject:
   - component: {fileID: 2732112921786787223}
   - component: {fileID: 1355308797835608729}
   - component: {fileID: -1551004042831136730}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Zombie_Businessman_Male_02
   m_TagString: Zombie
   m_Icon: {fileID: 0}

@@ -7117,7 +7117,7 @@ GameObject:
   - component: {fileID: -9208798869612924915}
   - component: {fileID: 8917199834299072398}
   - component: {fileID: -1070551823935380699}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Zombie_Bride_Female_02
   m_TagString: Zombie
   m_Icon: {fileID: 0}

@@ -1186,7 +1186,7 @@ GameObject:
   - component: {fileID: 7969252320727263483}
   - component: {fileID: -8223625835424667982}
   - component: {fileID: 2473634739038845058}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Zombie_Father_Male_03
   m_TagString: Zombie
   m_Icon: {fileID: 0}

@@ -2926,7 +2926,7 @@ GameObject:
   - component: {fileID: 6652665312902876906}
   - component: {fileID: 6706907716834393629}
   - component: {fileID: -7342388231331745381}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Zombie_Firefighter_Male_02
   m_TagString: Zombie
   m_Icon: {fileID: 0}

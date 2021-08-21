@@ -7552,7 +7552,7 @@ GameObject:
   - component: {fileID: -7965261763048969287}
   - component: {fileID: 7514399355582251357}
   - component: {fileID: 8130581297478635187}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Zombie_Diver_Male_02
   m_TagString: Zombie
   m_Icon: {fileID: 0}
