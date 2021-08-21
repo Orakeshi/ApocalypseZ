@@ -1,51 +1,88 @@
-﻿using System.Collections;
+﻿using Orakeshi.ApocalypseZ.App;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace Orakeshi.ApocalypseZ.Zombie
 {
-    public class ZombieEnemy : MonoBehaviour
+    public class ZombieEnemy : MonoBehaviour, IDamageable
     {
-        ZombieManager zombieManager;
-        int health;
-        int attackDamage;
+        int maxHealth = 100;
+        int currentHealth = 100;
+        int damageOutput = 5;
+
+        public int CurrentHealth
+        {
+            get
+            {
+                return currentHealth;
+            }
+        }
+
+        public int MaxHealth
+        {
+            set
+            {
+                maxHealth = value;
+            }
+        }
+
+        public int DamageOutput
+        {
+            get
+            {
+                return damageOutput;
+            }
+        }
+
+        public void TakeDamage(int damage)
+        {
+            currentHealth = currentHealth - damage;
+            if (currentHealth <= 0)
+            {
+                Animator deathAnim = GetComponent<Animator>();
+                deathAnim.SetTrigger("Dead");
+                GetComponent<AudioSource>().enabled = false;
+                GetComponent<ZombieNavMesh>().enabled = false;
+                //Disable zombie navmesh
+
+                print("Dead");
+                // Play death animation
+            }
+            else
+            {   
+                // play hit animation
+            }
+        }
+
+        void Attack()
+        {
+            // Play attack animation
+        }
+
+
         public bool damaged = false;
         public int damageTaken;
-        private void Awake()
-        {
-            zombieManager = GameObject.Find("ZombieManager").GetComponent<ZombieManager>();
-        }
 
-        private void Start()
-        {
-            health = zombieManager.zombieHealth;
-            attackDamage = zombieManager.zombieDamage;
-        }
-
-        void ZombieDamaged()
-        {
-            health -= damageTaken;
-        }
-
-        void ZombieDead()
-        {
-            print("DEAD");
-            Destroy(gameObject);
-            zombieManager.totalDead += 1;
-        }
+        //void ZombieDead()
+        //{
+        //    print("DEAD");
+        //    Destroy(gameObject);
+        //    zombieManager.totalDead += 1;
+        //}
 
         private void Update()
         {
-            if (damaged)
-            {
-                ZombieDamaged();
-                damaged = false;
-            }
+            //if (damaged)
+            //{
+            //    ZombieDamaged();
+            //    damaged = false;
+            //}
 
-            if(health <= 0)
-            {
-                ZombieDead();
-            }
+            //if(health <= 0)
+            //{
+            //    ZombieDead();
+            //}
         }
 
     }
