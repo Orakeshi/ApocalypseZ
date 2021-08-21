@@ -1,12 +1,25 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
 namespace Orakeshi.ApocalypseZ.Weapon
 {
     public class Magazine : MonoBehaviour
     {
-        public int numberOfBullet = 8;
+        [SerializeField]
+        private int numberOfBullets = 99999;
+
+        public int NumberOfBullets
+        {
+            get
+            {
+                return numberOfBullets;
+            }
+
+            set
+            {
+                numberOfBullets = value;
+            }
+        }
     }
 }
 
