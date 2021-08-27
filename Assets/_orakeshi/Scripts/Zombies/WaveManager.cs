@@ -11,6 +11,7 @@ namespace Orakeshi.ApocalypseZ.Zombie
         [SerializeField] public ZombieManager zombieManager;
         [SerializeField] public DeathTracker deathTracker;
 
+        bool bossAlive = false;
 
         private void Start()
         {
@@ -28,8 +29,7 @@ namespace Orakeshi.ApocalypseZ.Zombie
         {
             if((deathTracker.TotalZombieDeaths % 20) == 0 && deathTracker.TotalZombieDeaths != 0)
             {
-                zombieManager.StartCoroutine(zombieManager.ZombieSpawn("Boss"));
-                print("Doing");
+                StartCoroutine(BossRound());
             }
 
             else
@@ -43,10 +43,36 @@ namespace Orakeshi.ApocalypseZ.Zombie
             
         }
 
+        IEnumerator BossRound()
+        {
+            zombieManager.StartCoroutine(zombieManager.ZombieSpawn("Boss"));
+            print("Doing");
+            
+            for (int i = 0; i < 30; i++)
+            {
+                zombieManager.StartCoroutine(zombieManager.ZombieSpawn("Zombie"));
+                yield return new WaitForSeconds(0.2f);
+            }
+        }
+
         private void Update()
         {
+            if (!bossAlive)
+            {
+                if (GameObject.FindGameObjectWithTag("Boss"))
+                {
+                    bossAlive = true;
+                }
+                else
+                {
+                    return;
+                }
+            }
+
             //print(deathTracker.TotalZombieDeaths);
         }
+        // If boss round dont taack zombie kills (otherwise it will trigger another boss round)
+        // Once boss dead restart normal spawn & Buff zombies -> Give Zombie manager reference to zombie script to increase health.
     }
 }
 

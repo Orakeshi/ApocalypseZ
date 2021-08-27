@@ -13,6 +13,7 @@ TagManager:
   - Gun
   - Tree
   - Zombie
+  - Boss
   layers:
   - Default
   - TransparentFX
