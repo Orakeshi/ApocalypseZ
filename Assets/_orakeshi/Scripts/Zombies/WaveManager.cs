@@ -13,6 +13,7 @@ namespace Orakeshi.ApocalypseZ.Zombie
 
         bool bossAlive = false;
 
+        bool bossRound = false;
         private void Start()
         {
             
@@ -27,7 +28,7 @@ namespace Orakeshi.ApocalypseZ.Zombie
 
         void NextWave()
         {
-            if((deathTracker.TotalZombieDeaths % 20) == 0 && deathTracker.TotalZombieDeaths != 0)
+            if ((deathTracker.TotalZombieDeaths % 20) == 0 && deathTracker.TotalZombieDeaths != 0 && bossRound == false)
             {
                 StartCoroutine(BossRound());
             }
@@ -41,17 +42,18 @@ namespace Orakeshi.ApocalypseZ.Zombie
                 StartCoroutine(ZombieSpawnWrapper());
             }
             
-        }
+        } // Stop tracking zombies ->
 
-        IEnumerator BossRound()
+        IEnumerator BossRound() // Start boss round
         {
+            bossRound = true;
             zombieManager.StartCoroutine(zombieManager.ZombieSpawn("Boss"));
             print("Doing");
             
             for (int i = 0; i < 30; i++)
             {
                 zombieManager.StartCoroutine(zombieManager.ZombieSpawn("Zombie"));
-                yield return new WaitForSeconds(0.2f);
+                yield return new WaitForSeconds(0.2f); // Spawning zombies on the boss round
             }
         }
 
@@ -71,7 +73,7 @@ namespace Orakeshi.ApocalypseZ.Zombie
 
             //print(deathTracker.TotalZombieDeaths);
         }
-        // If boss round dont taack zombie kills (otherwise it will trigger another boss round)
+        // If boss round - dont track zombie kills (otherwise it will trigger another boss round)
         // Once boss dead restart normal spawn & Buff zombies -> Give Zombie manager reference to zombie script to increase health.
     }
 }
